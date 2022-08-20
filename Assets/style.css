@@ -8,5 +8,29 @@
 }
 
 
+.header {
+    background-color: var(--dark);
+    padding: 7px;
+    font-size: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    }
+    
+    h1 a {
+    color: var(--light);
+    text-decoration: none;
+    margin-left: 25px;
+    }
+    
+    nav a {
+    color: var(--light);
+    text-decoration: none;
+    padding-top: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 25px;
+    }
 
 
