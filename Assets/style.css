@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: var(--dark);
+    background-color: white;
 }
 
 :root {
@@ -11,11 +11,6 @@ body {
 --light: #ADEFD1DD;
 }
 
-h1 a {
-    color: var(--light);
-    text-decoration: none;
-    margin-left: 25px;
-    }
     
 nav a {
     color: var(--light);
@@ -30,7 +25,7 @@ nav a {
 h1 {
     font-size: 200%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--light);
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -38,9 +33,17 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.homebutton {
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--light);
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
 .header {
     background-color: var(--dark);
-    padding: 20px 7px 0px 7px;
+    padding: 12px;
     font-size: 17.5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
@@ -50,7 +53,7 @@ p {
     
 
 .hero {
-    height: 615px;
+    height: 700px;
     width: 100%;
     background-image: url(./images/background.image.jpeg);
     background-size: cover;
@@ -58,16 +61,13 @@ p {
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
     background-color: var(--dark);
     color: var(--light);
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 12px 0px;
 
 }
 
@@ -97,12 +97,66 @@ p {
 }
 
 .AboutP {
-    color: var(--light);
+    color: black;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 10px;
     margin-right: 10px;
     border-top: var(--light) 2px;
+}
+
+.Subheading {
+    color: black;
+    padding: 20px;
+}
+
+.Projects {
+    background-color: var(--light);
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    border-style: solid black;
+    border-width: 2px;
+}
+
+.Prjct1img, .Prjct3img {
+    border-radius: 50%;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+.Prjct2img, .Prjct4img {
+    border-radius: 50%;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    float: right;
+    
+}
+
+.Prjct1, .Prjct3 {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Prjct2, .Prjct4 {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Prjcttxt {
+    text-align: end;
+    padding-top: 30px;
 }
 
 @media screen and (max-width: 600px) {
