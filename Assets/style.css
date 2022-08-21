@@ -11,17 +11,6 @@ body {
 --light: #ADEFD1DD;
 }
 
-
-.header {
-    background-color: var(--dark);
-    padding: 7px;
-    font-size: 17.5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    }
-    
 h1 a {
     color: var(--light);
     text-decoration: none;
@@ -38,6 +27,28 @@ nav a {
     margin-left: 25px;
     }
 
+h1 {
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--light);
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    background-color: var(--dark);
+    padding: 20px 7px 0px 7px;
+    font-size: 17.5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    }
+    
+
 .hero {
     height: 615px;
     width: 100%;
@@ -47,12 +58,17 @@ nav a {
 }
 
 .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
     background-color: var(--dark);
     color: var(--light);
-    padding: 20;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+
 }
 
 .nav.socials {
@@ -63,6 +79,13 @@ nav a {
     font-size: 20px;
 }
 
+.abouthero {
+    height: 400px;
+    width: 100%;
+    background-image: url(./images/background.image.jpeg);
+    background-size: cover;
+    background-position: center;
+}
 .instagram::before {
     content: "📷";
     padding-right: 3px;
@@ -72,5 +95,31 @@ nav a {
     content:url(./images/GitHub-Mark-Light-32px.png);
     padding-right: 3px;
 }
+
+.AboutP {
+    color: var(--light);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: var(--light) 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .abouthero {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navabout a {
+        display: flex;
+        align-items: center;
+    }
+    }
+
+
 
 
