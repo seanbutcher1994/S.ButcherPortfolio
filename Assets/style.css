@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: white;
+    background-color:var(--light);
 }
 
 :root {
@@ -25,12 +25,13 @@ nav a {
 h1 {
     font-size: 200%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
+    color: var(--dark);
     margin-bottom: 20px;
 }
 
 p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--dark);
 }
 
 .homebutton {
@@ -97,7 +98,7 @@ p {
 }
 
 .AboutP {
-    color: black;
+    color: var(--dark);
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 10px;
@@ -106,7 +107,7 @@ p {
 }
 
 .Subheading {
-    color: black;
+    color: var(--dark);
     padding: 20px;
 }
 
@@ -157,6 +158,9 @@ p {
 .Prjcttxt {
     text-align: end;
     padding-top: 30px;
+    color: var(--dark);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 @media screen and (max-width: 600px) {
