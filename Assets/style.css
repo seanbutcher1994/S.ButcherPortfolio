@@ -2,6 +2,9 @@
 
 }
 
+body {
+}
+
 :root {
 --dark: #00203fff;
 --light: #ADEFD1DD;
@@ -17,13 +20,13 @@
     justify-content: space-between;
     }
     
-    h1 a {
+h1 a {
     color: var(--light);
     text-decoration: none;
     margin-left: 25px;
     }
     
-    nav a {
+nav a {
     color: var(--light);
     text-decoration: none;
     padding-top: 10px;
@@ -32,5 +35,13 @@
     display: inline-block;
     margin-left: 25px;
     }
+
+.hero {
+    height: 615px;
+    width: 100%;
+    background-image: url(./images/background.image.jpeg);
+    background-size: cover;
+    background-position: center;
+}
 
 
